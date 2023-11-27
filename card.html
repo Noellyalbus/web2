@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="layout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio Siri Cascudo</title>
+    <!--Google Links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+           <div id="logo-container"><a href="/" class="nav-link"><div class="logo">🦀</div></div> 
+            <ul class="nav-list">   
+                <li class="nav-item"><a href="card.html" class="nav-link">Cardápio</a></li>
+                <li class="nav-item"><a href="infor.html" class="nav-link">Informações</a></li>
+            </ul>
+            <div class="reserva"><a href="formulario.html" class="nav-button"><button onclick="mostrarFormulario('fazerReserva')">Reservas</button></a></div>
+            
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/icons8-menu-quadrado-2-50.png"></button>
+            </div>
+    
+            <div class="mobile-menu">
+                <ul class="nav-list">   
+                    <li class="nav-item"><a href="card.html" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="infor.html" class="nav-link">Informações</a></li>
+                </ul>
+                <div class="reserva"><a href="formulario.html" class="nav-button"><button onclick="mostrarFormulario('fazerReserva')">Reservas</button></a></div>
+                
+            </div>
+        </nav>
+        </header>
+
+
+        <div class="voltar_inicio">
+            <a href="index.html" class="inicio"> Início</a>
+            >
+            <span class="actual-page"> Cardapio</span>
+        </div>
+
+    <div class="cardapio">
+       
+        <div class="heading">
+            <h1>Nossos produtos</h1>
+            <div class="card-btns">
+                <button type="button" class="card-btn active-btn" id="Carne">Carne</button>
+                <button type="button" class="card-btn" id="vegan">Vegano</button>
+                <button type="button" class="card-btn" id="frango">Frango</button>
+                <button type="button" class="card-btn" id="adds">Acompanhamentos</button>
+                <button type="button" class="card-btn" id="combo">Combos</button>
+                <button type="button" class="card-btn" id="drink">Bebidas</button>
+                <button type="button" class="card-btn" id="extra">Extras</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <!-- item -->
+            <div class="food-item carne">
+                <img src="img/Hambuguer-de-siri_140725-89597.jpg" alt="hamburguer de siri" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Hamburguer de Siri</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Carne</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+         <!-- item -->
+        <div class="food-item carne">
+            <img src="img/Smash-plankton_1339-1576.jpg" alt="Smash Plankton" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Smash Plankton</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Carne</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+         <!-- item -->
+        <div class="food-item carne">
+            <img src="img/Larry-burguer_141793-15542.jpg" alt="Larry burguer" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Larry Burguer</h5>
+                    <h5 class="preço"> R$ 3,50</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Carne</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+         <!-- item -->
+        <div class="food-item carne">
+            <img src="img/rei-dos-mares.jpg" alt="Rei dos Mares" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Rei dos Mares</h5>
+                    <h5 class="preço"> R$ 4,20</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Carne</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+        <!-- item -->
+        <div class="food-item vegan">
+            <img src="img/sandyuicche.jpg" alt="Sandyuicche" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Sandyuicche</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Vegano</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+        <!-- item -->
+        <div class="food-item vegan">
+            <img src="img/siri-queijo.jpg" alt="siri-queijo" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Siri queijo</h5>
+                    <h5 class="preço"> R$ 3,50</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Vegano</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+        <!-- item -->
+        <div class="food-item vegan">
+            <img src="img/coral burguer.jpg" alt="coral-burguer" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Coral burguer</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Vegano</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+        <!-- item -->
+        <div class="food-item vegan">
+            <img src="img/veggie-bubbles.jpg" alt="veggie-bubbles" class="card-img">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Veggie bubbles</h5>
+                    <h5 class="preço"> R$ 4,20</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Vegano</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+        <!-- item -->
+
+        <!-- item -->
+        <div class="food-item frango">
+            <img src="img/man-ray-chicken.jpg" alt="man-ray-chicken">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Man Ray chicken</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Frango</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+         <!-- item -->
+         <div class="food-item frango">
+            <img src="img/x-puffy.jpg" alt="x-puffy">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>X-Puffy</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Frango</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+         <!-- item -->
+         <div class="food-item frango">
+            <img src="img/patrick_star.jpg" alt="patrick_star">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Patrick Star</h5>
+                    <h5 class="preço"> R$ 3,50</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Frango</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+         <!-- item -->
+         <div class="food-item adds">
+            <img src="img/Bod chips.jpg" alt="Bod chips">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Bod Chips</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item adds">
+            <img src="img/salada-de-alga.jpg" alt="salada-de-alga">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Salada de alga</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item adds">
+            <img src="img/karenmelo.jpg" alt="karenmelo">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>shake karenmelo</h5>
+                    <h5 class="preço"> R$ 4,20</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item adds">
+            <img src="img/amendobobo.jpg" alt="Amendobobo">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Shake Amendobobo</h5>
+                    <h5 class="preço"> R$ 4,20</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos/span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item frango">
+            <img src="img/frango-do-bikini.jpg" alt="frango-do-bikini">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Frango do bikini</h5>
+                    <h5 class="preço"> R$ 4,20</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Frango</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+        <!-- item -->
+        <div class="food-item combo">
+            <img src="img/bob-combo.jpg" alt="bob-combo">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Combo Bob</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item combo">
+            <img src="img/star-combo.jpg" alt="star-combo">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Combo Estrela</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item combo">
+            <img src="img/combo-siri.jpg" alt="combo-siri">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Combo Siri feliz</h5>
+                    <h5 class="preço"> R$ 3,50</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item combo">
+            <img src="img/hs-mm-combo.jpg" alt="hs-mm-combo">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Combo HS&MM</h5>
+                    <h5 class="preço"> R$ 4,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Acompanhamentos</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+          <!-- item -->
+          <div class="food-item drink">
+            <img src="img/garry-refri.jpg" alt="garry-refri">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Refri Garry Gasoso</h5>
+                    <h5 class="preço"> R$ 3,00</h5>
+                </div>
+                <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                <!-- <p class="categoria">categoria: <span>Bebidas</span></p> -->
+                <button>Adicionar no carrinho</button>
+            </div>
+        </div>
+        <!-- fim do item -->
+
+            <!-- item -->
+            <div class="food-item drink">
+                <img src="img/suco-abacaxi.jpg" alt="suco-abacaxi">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Suco de Abacaxi</h5>
+                        <h5 class="preço"> R$ 3,00</h5>
+                    </div>
+                    <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                    <!-- <p class="categoria">categoria: <span>Bebidas</span></p> -->
+                    <button>Adicionar no carrinho</button>
+                </div>
+            </div>
+            <!-- fim do item -->
+
+            <!-- item -->
+            <div class="food-item drink">
+                <img src="img/holandes-voador.jpg" alt="holandes-voador">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Holadês Voador</h5>
+                        <h5 class="preço"> R$ 3,50</h5>
+                    </div>
+                    <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                    <!-- <p class="categoria">categoria: <span>Bebidas</span></p> -->
+                    <button>Adicionar no carrinho</button>
+                </div>
+            </div>
+            <!-- fim do item -->
+
+            <!-- item -->
+            <div class="food-item drink">
+                <img src="img/lumonado-molusco.jpg" alt="lumonado-molusco">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Lumonada Molusco</h5>
+                        <h5 class="preço"> R$ 4,20</h5>
+                    </div>
+                    <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                    <!-- <p class="categoria">categoria: <span>Bebidas</span></p> -->
+                    <button>Adicionar no carrinho</button>
+                </div>
+            </div>
+            <!-- fim do item -->
+
+            <!-- item -->
+            <div class="food-item extra">
+                <img src="img/ingrediente-secreto.jpg" alt="Secreto">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Molho Secreto</h5>
+                        <h5 class="preço"> R$ 3,00</h5>
+                    </div>
+                    <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                    <!-- <p class="categoria">categoria: <span>Extra</span></p> -->
+                    <button>Adicionar no carrinho</button>
+                </div>
+            </div>
+            <!-- fim do item -->
+
+            <!-- item -->
+            <div class="food-item extra">
+                <img src="img/molho-tartaro.jpg" alt="molho-tartaro">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Molho Tartaro</h5>
+                        <h5 class="preço"> R$ 3,00</h5>
+                    </div>
+                    <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                    <!-- <p class="categoria">categoria: <span>Extra</span></p> -->
+                    <button>Adicionar no carrinho</button>
+                </div>
+            </div>
+            <!-- fim do item -->
+
+            <!-- item -->
+            <div class="food-item extra">
+                <img src="img/geleia-de-aguaviva.jpg" alt="Geleia de geleia-de-aguaviva">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Geleia de água-viva</h5>
+                        <h5 class="preço"> R$ 3,50</h5>
+                    </div>
+                    <p>Pão vegano, tomate, alface, queijo, hambuguer misterioso</p>
+                    <!-- <p class="categoria">categoria: <span>Extra</span></p> -->
+                    <button>Adicionar no carrinho</button>
+                </div>
+            </div>
+            <!-- fim do item -->
+        </div>
+
+    </div>
+    <!-- <h3>Cardápio</h3>
+
+<div class="list1">
+    <div>    
+        <p>Carne</p>
+        <li>Hambúrger de Siri.........3,00</li>
+        <li>Smash Plankton...........3,00</li>
+        <li>Larry Burguer.............3,50</li>
+        <li>Rei dos Mares.............4,20</li>
+        <br>
+        <p>Viggies</p>
+        <li>Sandyuicche...............3,00</li>
+        <li>Coral Burguer.............3,00</li>
+        <li>Siri Queijo...............3,50</li>
+        <li>Veggie Bubbles............4,20</li>
+        <br>
+        <p>Acompanhamentos</p>
+        <li>Bod Chips.................3,00</li>
+        <li>Salada de Algas...........3,00</li>
+        <li>Shake.....................3,50</li>
+        <li>Amendobobo................4,20</li>
+        <li>Shake Karenmelo...........4,20</li>
+    </div> 
+    <div>
+        <p>Frango</p>
+        <li>Man Ray Chicken...........3,00</li>
+        <li>X-Puffy...................3,00</li>
+        <li>Patrick Star..............3,50</li>
+        <li>Frango do Bikini..........4,20</li>
+        <br>
+        <p>Combo Infantil</p>
+        <li>Combo Esponja.............3,00</li>
+        <li>Combo Estrela.............3,00</li>
+        <li>Combo Siri Feliz..........3,50</li>
+        <li>Combo HS & MM.............4,20</li>
+        <br>
+        <p>Bebidas</p>
+        <li>Refri Garry Gasoso........3,00</li>
+        <li>Succo de Abacaxi..........3,00</li>
+        <li>Holadês Voador............3,50</li>
+        <li>Lumonada Molusco..........4,20</li>
+        <br> 
+        <p>Extras</p>
+        <li>Molho Secreto.............3,00</li>
+        <li>Molho Tártaro.............3,00</li>
+        <li>Gelei de água-viva........3,50</li>
+    </div>
+</div> -->
+<footer>
+    <div id="rodape">
+        <div class="footer-contatos">
+            <div class="logo-footer">🦀</div>
+            <p>"Sabor no fundo do mar!"</p>
+            <div id="footer-social-media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div id="footer-horas">
+            <h3>Horários</h3>
+            <p>Segunda à sexta: 18hrs às 22hrs</p>
+        </div>
+        <div id="footer-endereço">
+            <h3>Endereço</h3>
+            <p>Rua Caranguejo, 780 - Fenda do Bíquini</p>
+        </div>
+
+    </div>
+</footer>
+<script src="/mobile.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>

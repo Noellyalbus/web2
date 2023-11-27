@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" a href="layout2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete do Siri Cascudo</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+           <div id="logo-container"><a href="/" class="nav-link"><div class="logo">🦀</div></div> 
+            <ul class="nav-list">   
+                <li class="nav-item"><a href="card.html" class="nav-link">Cardápio</a></li>
+                <li class="nav-item"><a href="infor.html" class="nav-link">Informações</a></li>
+            </ul>
+            <div class="reserva"><a href="formulario.html" class="nav-button"><button onclick="mostrarFormulario('fazerReserva')">Reservas</button></a></div>
+            
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/icons8-menu-quadrado-2-50.png"></button>
+            </div>
+    
+            <div class="mobile-menu">
+                <ul class="nav-list">   
+                    <li class="nav-item"><a href="card.html" class="nav-link">Cardápio</a></li>
+                    <li class="nav-item"><a href="infor.html" class="nav-link">Informações</a></li>
+                </ul>
+                <div class="reserva"><a href="formulario.html" class="nav-button"><button onclick="mostrarFormulario('fazerReserva')">Reservas</button></a></div>
+                
+            </div>
+        </nav>
+        </header>
+
+        <div class="sobre-container">
+            <div class="sobre-content">
+                <img src="img/krusty-krab.jpg" alt="Frente lanchonete Siri Cascudo" title="Siri Cascudo">
+                <div class="desc">
+                    <div class="desc-content">
+                        <h1>
+                            <span style="color: rgb(255, 170, 0);"> O SIRI CASCUDO</span>
+                            <h5>
+                                <br>
+                            </h5>
+                            <h5>
+                                <span style="color: rgb(255, 170, 0);">
+                                    <strong>
+                                        O Restaurante Temático do Bob Esponja! Oferecemos um cardápio delicioso com pratos inspirados no oceano, um ambiente mágico que recria a Fenda do Biquíni, uma equipe dedicada vestida como personagens do Bob Esponja e lembranças exclusivas. Esperamos proporcionar a você uma esperiência única e amável. Te esperamos aqui!!
+                                    </strong>
+                                </span>
+                            </h5>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- <div id="container">
+        <p>SOBRE NÓS</p>
+    </div>
+    <div id="information">
+        <p>Bem-vindo ao "O Siri Cascudo". O Restaurante Temático do Bob Esponja! Oferecemos um cardápio delicioso com pratos inspirados no oceano, um ambiente mágico que recria a Fenda do Biquíni, uma equipe dedicada vestida como personagens do Bob Esponja e lembranças exclusivas. Esperamos proporcionar a você uma esperiência única e amável. Te esperamos aqui!!</p>
+    </div> -->
+    
+    <footer>
+        <div id="rodape">
+            <div class="footer-contatos">
+                <div class="logo-footer">🦀</div>
+                <p>"Sabor no fundo do mar!"</p>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="footer-horas">
+                <h3>Horários</h3>
+                <p>Segunda à sexta: 18hrs às 22hrs</p>
+            </div>
+            <div id="footer-endereço">
+                <h3>Endereço</h3>
+                <p>Rua Caranguejo, 780 - Fenda do Bíquini</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="/mobile.js"></script> 
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" a href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete do Siri Cascudo</title>
+</head>
+<body>
+    <header class="header" id="homepage">
+        <nav class="nav-bar">
+            <div id="logo-container"><a href="/" class="nav-link"><div class="logo">🦀</div></div> 
+             <ul class="nav-list">   
+                 <li class="nav-item"><a href="card.html" class="nav-link">Cardápio</a></li>
+                 <li class="nav-item"><a href="infor.html" class="nav-link">Informações</a></li>
+             </ul>
+             <div class="reserva"><a href="formulario.html" class="nav-button"><button onclick="mostrarFormulario('fazerReserva')">Reservas</button></a></div>
+             
+             <div class="mobile-menu-icon">
+                 <button onclick="menuShow()"><img class="icon" src="img/icons8-menu-quadrado-2-50.png"></button>
+             </div>
+     
+             <div class="mobile-menu">
+                 <ul class="nav-list">   
+                     <li class="nav-item"><a href="card.html" class="nav-link">Cardápio</a></li>
+                     <li class="nav-item"><a href="infor.html" class="nav-link">Informações</a></li>
+                 </ul>
+                 <div class="reserva"><a href="formulario.html" class="nav-button"><button onclick="mostrarFormulario('fazerReserva')">Reservas</button></a></div>
+                 
+             </div>
+         </nav>
+    </header>
+
+    <section class="container">
+        <div class="slider">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+          
+            <div class="slide primeiro">
+              <img src="img/Hambuguer-de-siri_140725-89597.jpg" alt="Hamburguer de siri">
+            </div>
+            <div class="slide">
+              <img src="img/Larry-burguer_141793-15542.jpg" alt="Larry burguer">
+            </div>
+            <div class="slide">
+              <img src="img/Smash-plankton_1339-1576.jpg" alt="Smash plankton">
+            </div>
+
+          <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+        </div>
+      </section>
+      
+    <main>
+     <div class="infor">
+        <p>Bem-vindo ao "O Siri Cascudo" - O Restaurante Temático do Bob Esponja!</p>
+
+        Estamos emocionados em recebê-lo em nossa experiência submarina única inspirada na série amada do Bob Esponja. Aqui está o que você pode esperar durante a sua visita:<br><br>
+            
+        *Cardápio Delicioso:* Oferecemos uma variedade de pratos inspirados no oceano, desde nossos famosos hambúrgueres de siri até pratos de frutos do mar frescos. Não se esqueça de experimentar nossas sobremesas criativas que vão agradar tanto os pequenos quanto os grandes fãs do Bob Esponja.<br><br>
+            
+        *Ambiente Mágico:* Você será transportado para a Fenda do Biquíni assim que entrar em nosso restaurante. Nossa decoração vibrante e autêntica recria o mundo subaquático dos personagens, tornando sua refeição uma aventura inesquecível.<br><br>
+            
+        *Equipe Dedicada:* Nossos funcionários estão vestidos como personagens icônicos do Bob Esponja e estão prontos para tornar sua visita divertida e memorável. Eles estão à disposição para ajudá-lo a fazer a melhor escolha no cardápio e garantir que você tenha uma experiência incrível.<br><br>
+            
+        *Lembranças Exclusivas:* Não se esqueça de conferir nossa loja de lembranças, onde você pode encontrar produtos exclusivos do Bob Esponja para levar para casa como recordação desta experiência única.<br><br>
+            
+        Estamos ansiosos para servi-lo e proporcionar momentos especiais enquanto você explora o mundo subaquático do Bob Esponja. Esperamos que você aproveite cada momento e saia com um sorriso no rosto!</p>
+     </div>
+    </main>
+
+    <footer>
+        <div id="rodape">
+            <div class="footer-contatos">
+                <div class="logo-footer">🦀</div>
+                <p>"Sabor no fundo do mar!"</p>
+                <div id="footer-social-media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="footer-horas">
+                <h3>Horários</h3>
+                <p>Segunda à sexta: 18hrs às 22hrs</p>
+            </div>
+            <div id="footer-endereço">
+                <h3>Endereço</h3>
+                <p>Rua Caranguejo, 780 - Fenda do Bíquini</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="/mobile.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

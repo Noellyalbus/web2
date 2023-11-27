@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgt@200;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+  min-height: 90vh;
+  background: url(img/68-688695_spongebob-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.voltar_inicio {
+  position: absolute;
+  top: 0;
+  margin-bottom: 100%;
+  left: 20px;
+  z-index: 999;
+}
+
+.reserva-wrapper{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(30,144,255);
+  backdrop-filter: blur(20px);
+  color: midnightblue;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+  
+.reserva-wrapper h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.reserva-wrapper .input{
+  width: 100%;
+  height: 40%;
+  background: deepskyblue;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(65,105,225);
+  border-radius: 40px;
+  font-size: 14px;
+  padding: 20px 45px 20px 20px;
+  color: #0000ff;
+}
+
+.input-box input::placeholder{
+  color: #0000ff;
+}
+
+.reserva-wrapper label{
+  display: flex;
+  color: midnightblue;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 6px 0 10px;
+}
+ 
+.reserva-wrapper button{
+  width: 45%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background: #fff;
+  text-align: center;
+  margin: 20px 0 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  color: midnightblue;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+  
+  /* #formFazerReserva, #formCancelarReserva {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #formFazerReserva label, #formCancelarReserva label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #formFazerReserva input, #formCancelarReserva input, #formFazerReserva select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  #formFazerReserva button, #formCancelarReserva button {
+    padding: 10px 20px;
+  }
+  
+  #resumoReserva {
+    margin-top: 20px;
+  }
+  
+  #resumoReserva span {
+    font-weight: bold;
+  }
+  
+  #mensagemCancelarReservaTexto {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  } */ 
+  
